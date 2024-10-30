@@ -7,6 +7,7 @@ In the ever-growing e-commerce landscape, platforms like Amazon host an extensiv
 Our project addresses these challenges by leveraging Few-Shot Learning (FSL) to improve the categorization of low-frequency products, enabling the model to generalize from limited labeled examples. In addition, we implement a custom recommendation system that combines Contextualized late interaction over BERT (ColBERT) with session-based and product-specific features. This dual approach—categorizing low-frequency products with Few-Shot Learning and enhancing recommendations with ColBERT—aims to achieve higher recommendation accuracy while remaining computationally efficient.
 
 **Objectives**
+=========================
 Improve Categorization Accuracy: Using Few-Shot Learning techniques, we aim to enhance the categorization of products in low-frequency categories, allowing the model to learn effectively from minimal labeled examples.
 
 Enhanced Recommendations: Our goal is to design a ranking and recommendation system that efficiently suggests low-frequency products using ColBERT, evaluated against standard benchmarks like MRR@100 to measure relevance.
@@ -14,6 +15,7 @@ Enhanced Recommendations: Our goal is to design a ranking and recommendation sys
 Comparison to Baselines: To validate the efficacy of our approach, we will compare our model’s performance with existing baseline models on accuracy, efficiency, and relevance metrics.
 
 **Approach**
+
 Dataset and Preprocessing: We use the Amazon M2 dataset, a large-scale, multilingual e-commerce dataset, focusing specifically on low-frequency product categories. Initial steps include exploratory data analysis (EDA) and extensive preprocessing, such as removing duplicates, handling missing values, tokenization, and feature extraction.
 
 Few-Shot Learning Model Development: To classify low-frequency products, we will fine-tune a GPT-based model using few-shot learning techniques, enriched by contrastive learning and meta-learning. This approach allows the model to adapt to new categories quickly and distinguish between similar categories, creating a robust classifier for underrepresented products.
