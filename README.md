@@ -1,4 +1,4 @@
-# Few-shot learninng for Effective Product Categorization and Recommendation 🔍
+# Few-shot learning for Effective Product Categorization and Recommendation 🔍
 
 📚 **Project Overview**
 =========================
