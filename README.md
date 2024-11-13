@@ -35,7 +35,7 @@ This project presents a scalable solution for low-frequency product recommendati
 
 🔧 **Installation|running**
 ===========================
-Describe how the program can be ran
+runtime environment has not been set yet
 
 👥 **Authors**
 ===
