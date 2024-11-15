@@ -1,0 +1,10 @@
+1. most methods are failing so we will take a smaller version of the data and try to implement a basic algorithm
+2. take this smaller version and build a basic recommender system with no categorization
+3. if successful apply on the larger dataset
+4 if successful try categorization then recommendation
+
+some problems being faced include
+
+        program running forever
+        how to effectively, preprocess and implement an algorithm, this is a challenge because different algorithms and techniques requires
+        different preprocessing 
