@@ -2,9 +2,7 @@
 
 📚 **Project Overview**
 =========================
-In the ever-growing e-commerce landscape, platforms like Amazon host an extensive catalog of products spanning a multitude of categories. However, a significant proportion of these categories, especially those with niche products, suffer from a low frequency of labeled examples, making them challenging for traditional supervised learning models, which rely on abundant labeled data to achieve accurate predictions. This scarcity of labeled instances in low-frequency categories not only impacts categorization accuracy but also hinders the effectiveness of recommendation systems for such products, ultimately reducing user satisfaction.
-
-Our project addresses these challenges by leveraging Few-Shot Learning (FSL) to improve the categorization of low-frequency products, enabling the model to generalize from limited labeled examples. In addition, we implement a custom recommendation system that combines Contextualized late interaction over BERT (ColBERT) with session-based and product-specific features. This dual approach—categorizing low-frequency products with Few-Shot Learning and enhancing recommendations with ColBERT—aims to achieve higher recommendation accuracy while remaining computationally efficient.
+E-commerce platforms like Amazon host vast product catalogs, but low-frequency categories often lack sufficient labeled data, limiting the accuracy of traditional supervised models and hindering recommendations. To address this, our project employs Few-Shot Learning (FSL) for improved categorization of low-frequency products, enabling models to generalize with minimal labeled examples. Complementing this, we integrate Contextualized Late Interaction over BERT (ColBERT) with session-based and product-specific features to enhance recommendations. This dual approach improves categorization and recommendation accuracy while ensuring computational efficiency, ultimately boosting user satisfaction.
 
 **Objectives**
 =========================
@@ -16,7 +14,7 @@ Our project addresses these challenges by leveraging Few-Shot Learning (FSL) to 
 
 **Approach**
 =========================
-- **Dataset and Preprocessing:** We use the Amazon M2 dataset, a large-scale, multilingual e-commerce dataset, focusing specifically on low-frequency product categories. Initial steps include exploratory data analysis (EDA) and extensive preprocessing, such as removing duplicates, handling missing values, tokenization, and feature extraction.
+- **Dataset and Preprocessing:** We use the Amazon M2 dataset, focusing specifically on low-frequency product categories. Initial steps include exploratory data analysis (EDA) and extensive preprocessing, such as removing duplicates, handling missing values, tokenization, and feature extraction.
 
 - **Few-Shot Learning Model Development:** To classify low-frequency products, we will fine-tune a GPT-based model using few-shot learning techniques, enriched by contrastive learning and meta-learning. This approach allows the model to adapt to new categories quickly and distinguish between similar categories, creating a robust classifier for underrepresented products.
 
