@@ -2,7 +2,7 @@
 
 📚 **Project Overview**
 =========================
-This project leverages Few-Shot Learning (FSL) to improve the categorization of low-frequency products with minimal labeled data and enhances recommendations using Contextualized Late Interaction over BERT (ColBERT) combined with session-based and product-specific features. This dual approach ensures accurate categorization and recommendations while remaining computationally efficient.
+This project leverages Few-Shot Learning (FSL) to improve the categorization of low-frequency products with minimal labeled data and enhances recommendations using Contextualized Late Interaction over BERT (ColBERT) combined with session-based and product-specific features. 
 
 **Approach**
 =========================
