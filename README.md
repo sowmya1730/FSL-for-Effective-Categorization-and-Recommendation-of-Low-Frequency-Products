@@ -42,10 +42,10 @@ The project aims to demonstrate:
 - A scalable and computationally efficient solution for niche e-commerce products.  
 =======
 - **Custom Ranking System:** Post-categorization, we employ ColBERT for ranking, with feature engineering to capture session-specific and item-specific characteristics. We also incorporate XGBoost for shallow ranking, providing a blend of deep and shallow learning techniques for efficient recommendation.
->>>>>>> dbb7e00fc4ba61c450267e6536cfd334f94476f8
+
 
 This approach provides a robust framework for addressing data scarcity in low-frequency categories while delivering accurate, user-centric recommendations.
-```
+
 
 
 
@@ -81,9 +81,9 @@ python3 -m venv venv; source venv/bin/activate; python -m pip install -q --upgra
 
 ```
 The Two commands are of the same structure
-1.Activate the python environment
-2.Upgrade pip to it current version
-3.install the requirements located in requirements.txt: You should be at the root of your env
+- Activate the python environment
+- Upgrade pip to it current version
+-  install the requirements located in requirements.txt: You should be at the root of your env
 
 👥 **Authors**
 ===
