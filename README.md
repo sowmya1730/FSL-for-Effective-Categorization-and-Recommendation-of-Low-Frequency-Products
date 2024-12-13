@@ -5,12 +5,14 @@
 
 This project leverages Few-Shot Learning (FSL) to enhance the categorization of low-frequency products in e-commerce platforms, addressing the challenge of limited labeled examples in niche categories. Additionally, it integrates a custom recommendation system combining Contextualized Late Interaction over BERT (ColBERT) with session-based and product-specific features, aiming to improve recommendation accuracy while maintaining computational efficiency.
 
-## Objectives  
+🔎**Objectives**
+===
 - **Improve Categorization Accuracy:** Leverage Few-Shot Learning to classify low-frequency product categories with minimal labeled examples.  
 - **Enhanced Recommendations:** Design a ranking and recommendation system using ColBERT, focusing on relevance and efficiency.  
 - **Baseline Comparison:** Evaluate performance against existing models on metrics like accuracy, MRR@100, and runtime efficiency.  
 
-## Approach  
+📖**Approach**
+===
 1. **Dataset and Preprocessing:**  
    - Utilize the Amazon M2 dataset, focusing on low-frequency product categories.  
    - Perform exploratory data analysis (EDA) and preprocessing, including tokenization, feature extraction, and handling missing data.  
@@ -27,7 +29,8 @@ This project leverages Few-Shot Learning (FSL) to enhance the categorization of 
    - Benchmark against baseline models like CatBoost Fusion and MGTV-REC.  
 
 
-## Expected Results  
+📈**Expected Results**
+===
 The project aims to demonstrate:  
 - Improved categorization accuracy for low-frequency product categories.  
 - High relevance in recommendations with competitive MRR@100 scores.  
@@ -44,8 +47,8 @@ The project aims to demonstrate:
   
 ** To run the code locally **
 - set up the environment 
-'''bash 
-#on windows
+```bash
+# setup the environment on windows by running the following code.
 python -m venv venv; venv\Scripts\activate; python -m pip install -q --upgrade pip; python -m pip install -r requirements.txt  
 
 #On Linux
