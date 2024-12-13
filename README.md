@@ -2,7 +2,7 @@
 
 📚 **Project Overview**
 =========================
-<<<<<<< HEAD
+
 This project leverages Few-Shot Learning (FSL) to enhance the categorization of low-frequency products in e-commerce platforms, addressing the challenge of limited labeled examples in niche categories. Additionally, it integrates a custom recommendation system combining Contextualized Late Interaction over BERT (ColBERT) with session-based and product-specific features, aiming to improve recommendation accuracy while maintaining computational efficiency.
 
 ```markdown
@@ -35,7 +35,7 @@ This project leverages Few-Shot Learning (FSL) to improve the categorization of 
    - Assess the system using metrics such as MRR@100 and runtime efficiency.  
    - Benchmark against baseline models like CatBoost Fusion and MGTV-REC.  
 
-<<<<<<< HEAD
+
 ## Expected Results  
 The project aims to demonstrate:  
 - Improved categorization accuracy for low-frequency product categories.  
@@ -69,7 +69,7 @@ We anticipate that our approach, combining Few-Shot Learning for categorization 
 
 This project presents a scalable solution for low-frequency product recommendation in e-commerce, advancing beyond traditional approaches to meet the nuanced needs of users engaging with less common, niche items.
 
->>>>>>> dbb7e00fc4ba61c450267e6536cfd334f94476f8
+
 
 ** To run the code locally **
 - set up the environment 
