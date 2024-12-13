@@ -2,43 +2,70 @@
 
 📚 **Project Overview**
 =========================
-In the ever-growing e-commerce landscape, platforms like Amazon host an extensive catalog of products spanning a multitude of categories. However, a significant proportion of these categories, especially those with niche products, suffer from a low frequency of labeled examples, making them challenging for traditional supervised learning models, which rely on abundant labeled data to achieve accurate predictions. This scarcity of labeled instances in low-frequency categories not only impacts categorization accuracy but also hinders the effectiveness of recommendation systems for such products, ultimately reducing user satisfaction.
+This project leverages Few-Shot Learning (FSL) to enhance the categorization of low-frequency products in e-commerce platforms, addressing the challenge of limited labeled examples in niche categories. Additionally, it integrates a custom recommendation system combining Contextualized Late Interaction over BERT (ColBERT) with session-based and product-specific features, aiming to improve recommendation accuracy while maintaining computational efficiency.
 
-Our project addresses these challenges by leveraging Few-Shot Learning (FSL) to improve the categorization of low-frequency products, enabling the model to generalize from limited labeled examples. In addition, we implement a custom recommendation system that combines Contextualized late interaction over BERT (ColBERT) with session-based and product-specific features. This dual approach—categorizing low-frequency products with Few-Shot Learning and enhancing recommendations with ColBERT—aims to achieve higher recommendation accuracy while remaining computationally efficient.
+```markdown
 
-**Objectives**
-=========================
-- **Improve Categorization Accuracy:** Using Few-Shot Learning techniques, we aim to enhance the categorization of products in low-frequency categories, allowing the model to learn effectively from minimal labeled examples.
+## Objectives  
+- **Improve Categorization Accuracy:** Leverage Few-Shot Learning to classify low-frequency product categories with minimal labeled examples.  
+- **Enhanced Recommendations:** Design a ranking and recommendation system using ColBERT, focusing on relevance and efficiency.  
+- **Baseline Comparison:** Evaluate performance against existing models on metrics like accuracy, MRR@100, and runtime efficiency.  
 
-- **Enhanced Recommendations:** Our goal is to design a ranking and recommendation system that efficiently suggests low-frequency products using ColBERT, evaluated against standard benchmarks like MRR@100 to measure relevance.
+## Approach  
+1. **Dataset and Preprocessing:**  
+   - Utilize the Amazon M2 dataset, focusing on low-frequency product categories.  
+   - Perform exploratory data analysis (EDA) and preprocessing, including tokenization, feature extraction, and handling missing data.  
 
-- **Comparison to Baselines:** To validate the efficacy of our approach, we will compare our model’s performance with existing baseline models on accuracy, efficiency, and relevance metrics.
+2. **Few-Shot Learning for Categorization:**  
+   - Fine-tune a GPT-based model with few-shot learning techniques, integrating contrastive learning and meta-learning to classify underrepresented products.  
 
-**Approach**
-=========================
-- **Dataset and Preprocessing:** We use the Amazon M2 dataset, a large-scale, multilingual e-commerce dataset, focusing specifically on low-frequency product categories. Initial steps include exploratory data analysis (EDA) and extensive preprocessing, such as removing duplicates, handling missing values, tokenization, and feature extraction.
+3. **Custom Recommendation System:**  
+   - Implement a ColBERT-based ranking system with session-specific and product-specific features for precise recommendations.  
+   - Incorporate XGBoost for shallow ranking to complement deep learning techniques.  
 
-- **Few-Shot Learning Model Development:** To classify low-frequency products, we will fine-tune a GPT-based model using few-shot learning techniques, enriched by contrastive learning and meta-learning. This approach allows the model to adapt to new categories quickly and distinguish between similar categories, creating a robust classifier for underrepresented products.
+4. **Evaluation:**  
+   - Assess the system using metrics such as MRR@100 and runtime efficiency.  
+   - Benchmark against baseline models like CatBoost Fusion and MGTV-REC.  
 
-- **Custom Ranking System:** Post-categorization, we employ ColBERT for ranking, with feature engineering to capture session-specific and item-specific characteristics. By leveraging ColBERT, we enable more accurate recommendations of low-frequency products based on contextual interaction. We also incorporate XGBoost for shallow ranking, providing a blend of deep and shallow learning techniques for efficient recommendation.
+## Expected Results  
+The project aims to demonstrate:  
+- Improved categorization accuracy for low-frequency product categories.  
+- High relevance in recommendations with competitive MRR@100 scores.  
+- A scalable and computationally efficient solution for niche e-commerce products.  
 
-- **Evaluation:** The models will be evaluated based on MRR@100 and runtime, with the aim of outperforming baseline models such as CatBoost Fusion and MGTV-REC, as shown in our anticipated results.
+This approach provides a robust framework for addressing data scarcity in low-frequency categories while delivering accurate, user-centric recommendations.
+```
 
-**Expected Results**
-=========================
-We anticipate that our approach, combining Few-Shot Learning for categorization with ColBERT for recommendation, will yield a high MRR@100, indicating effective recommendations for low-frequency products. The results are expected to demonstrate the advantages of Few-Shot Learning in handling data scarcity and ColBERT’s potential in delivering accurate, session-based recommendations for niche categories in e-commerce.
-
-This project presents a scalable solution for low-frequency product recommendation in e-commerce, advancing beyond traditional approaches to meet the nuanced needs of users engaging with less common, niche items.
-
-📖 **Table of contents**
-=========================
 
 🔧 **Installation|running**
 ===========================
-runtime environment has not been set yet
+**Google colab:** This is the recommended way to run the code. 
+- download the dataset from kaggle using this  [link](https://www.kaggle.com/datasets/marquis03/amazon-m2)
+- install or requirements in the requirements.txt file
+- run the code in init_thought_process step by step. you can skip steps based
+- or you can run the entire code once using initial_training_cleaning
+- **code is still in progress**
 
+** To run the code locally **
+- set up the environment 
+'''bash 
+#on windows
+python -m venv venv; venv\Scripts\activate; python -m pip install -q --upgrade pip; python -m pip install -r requirements.txt  
+
+#On Linux
+python3 -m venv venv; source venv/bin/activate; python -m pip install -q --upgrade pip; python -m pip install -r requirements.txt 
+
+```
+The Two commands are of the same structure
+1.Activate the python environment
+2.Upgrade pip to it current version
+3.install the requirements located in requirements.txt: You should be at the root of your env
+'''
 👥 **Authors**
 ===
+- Sylvester Ampomah
+- Sai Sowmya 
 
 🌟 **Acknowledgment**
 ===
+We express our profound gratitude to Professor Qu of GWU for his profound support in handling this project
