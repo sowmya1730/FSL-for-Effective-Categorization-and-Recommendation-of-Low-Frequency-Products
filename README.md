@@ -29,7 +29,6 @@ This project leverages Few-Shot Learning (FSL) to improve the categorization of 
 **Approach**
 =========================
 - **Dataset and Preprocessing:** We use the Amazon M2 dataset, focusing specifically on low-frequency product categories. Initial steps include exploratory data analysis (EDA) and extensive preprocessing, such as removing duplicates, handling missing values, tokenization, and feature extraction.
->>>>>>> dbb7e00fc4ba61c450267e6536cfd334f94476f8
 
 4. **Evaluation:**  
    - Assess the system using metrics such as MRR@100 and runtime efficiency.  
@@ -85,7 +84,7 @@ The Two commands are of the same structure
 1.Activate the python environment
 2.Upgrade pip to it current version
 3.install the requirements located in requirements.txt: You should be at the root of your env
-'''
+
 👥 **Authors**
 ===
 - Sylvester Ampomah
